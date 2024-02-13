@@ -46,7 +46,7 @@ namespace WebAddressBookTests
         {
             OpenHomePage();
             Login(new AccountData("admin", "secret"));
-            GoToGroupsPage();
+            GoToGroupsPaage();
             InitGroupCreation();
             FillGroupForm(new GroupData("Test", "Test", "Test"));
             SubmitGroupCreation();
@@ -87,7 +87,7 @@ namespace WebAddressBookTests
             driver.FindElement(By.Name("new")).Click();
         }
 
-        private void GoToGroupsPage()
+        private void GoToGroupsPaage()
         {
             driver.FindElement(By.LinkText("groups")).Click();
         }
