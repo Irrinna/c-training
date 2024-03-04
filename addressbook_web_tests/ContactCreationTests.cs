@@ -45,7 +45,7 @@ namespace WebAddressBookTests
         {
             OpenHomePage();
             Login(new AccountData("admin", "secret"));
-            InitcontactCreation();
+            InitContactCreation();
             ContactData contact = new ContactData("1234", "5678");
             FillContactForm(contact);
             SubmitContactCreation();
@@ -126,7 +126,7 @@ namespace WebAddressBookTests
 
         }
 
-        private void InitcontactCreation()
+        private void InitContactCreation()
         {
             driver.FindElement(By.LinkText("add new")).Click();
         }
